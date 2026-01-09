@@ -6,7 +6,12 @@
 }
 
 .paragrah {
-  max-width: 400px;
+  max-width: 350px;
   text-align: center;
-  margin: 20px 0;
+  margin: 0 auto;
+}
+
+img {
+  width: 70px;
+  margin: 30px auto;
 }
