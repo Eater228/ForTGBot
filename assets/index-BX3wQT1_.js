@@ -27,10 +27,46 @@ Error generating stack: `+e.message+`
   &:focus {
     border-color: #db5d5d;
   }
-`;var Vn=o((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),Hn=o(((e,t)=>{t.exports=Vn()}))(),Un=e=>{let t=(0,b.c)(27),{tg:n}=e,r=n.initDataUnsafe?.user?.first_name||``,i;t[0]===r?i=t[1]:(i={name:r,email:``,phone:``},t[0]=r,t[1]=i);let[a,o]=(0,_.useState)(i),s;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(s=e=>{let{name:t,value:n}=e.target;o(e=>({...e,[t]:n}))},t[2]=s):s=t[2];let c=s,l;t[3]!==a||t[4]!==n?(l=e=>{e.preventDefault(),console.log(`Name:`,a.name),console.log(`Email:`,a.email),console.log(`Phone:`,a.phone),n.sendData(JSON.stringify(a)),setTimeout(()=>n.close(),500)},t[3]=a,t[4]=n,t[5]=l):l=t[5];let u=l,d,f;t[6]===n?(d=t[7],f=t[8]):(d=()=>{n?(console.log(`Telegram WebApp доступний!`),console.log(`Дані користувача:`,n.initDataUnsafe?.user)):console.log(`Telegram WebApp не знайдено (можливо, відкрили у браузері)`)},f=[n],t[6]=n,t[7]=d,t[8]=f),(0,_.useEffect)(d,f);let p;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(p={backgroundColor:`#ff0000`,color:`black`,height:`50px`},t[9]=p):p=t[9];let m=n.initDataUnsafe?.user?.id,h;t[10]===m?h=t[11]:(h=(0,Hn.jsx)(`h1`,{style:p,children:m}),t[10]=m,t[11]=h);let g;t[12]===a.name?g=t[13]:(g=(0,Hn.jsx)(Bn,{type:`text`,placeholder:`Ведіть ваше ім'я`,name:`name`,value:a.name,onChange:c}),t[12]=a.name,t[13]=g);let v;t[14]===a.email?v=t[15]:(v=(0,Hn.jsx)(Bn,{type:`email`,placeholder:`Ведіть ваш email`,name:`email`,value:a.email,onChange:c}),t[14]=a.email,t[15]=v);let y;t[16]===a.phone?y=t[17]:(y=(0,Hn.jsx)(Bn,{type:`tel`,placeholder:`Ведіть ваш номер телефону`,name:`phone`,value:a.phone,onChange:c}),t[16]=a.phone,t[17]=y);let x;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,Hn.jsx)(`button`,{type:`submit`,id:`order`,children:`Submit`}),t[18]=x):x=t[18];let S;t[19]!==u||t[20]!==g||t[21]!==v||t[22]!==y?(S=(0,Hn.jsxs)(zn,{onSubmit:u,children:[g,v,y,x]}),t[19]=u,t[20]=g,t[21]=v,t[22]=y,t[23]=S):S=t[23];let C;return t[24]!==S||t[25]!==h?(C=(0,Hn.jsxs)(`div`,{children:[h,S]}),t[24]=S,t[25]=h,t[26]=C):C=t[26],C};const Wn=Rn.div`
+`,Vn=Rn.h1`
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(
+    --tg-theme-text-color,
+    #333
+  ); /* Використовуємо змінні теми Telegram або дефолтний колір */
+  font-weight: 700;
+
+  /* Адаптивність (опціонально) */
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+`,Hn=Rn.button`
+  margin-top: 20px;
+  border: 2px solid #00d9ff;
+
+  /* --- ДОДАНО ДЛЯ ЦЕНТРУВАННЯ --- */
+  display: flex; /* Вмикаємо Flexbox */
+  justify-content: center; /* Центруємо по горизонталі */
+  align-items: center; /* Центруємо по вертикалі */
+  text-align: center; /* Страховка для тексту */
+
+  /* Додаємо відступи, щоб кнопка не "сплющувала" текст */
+  padding: 10px 20px;
+  cursor: pointer; /* Щоб курсор ставав пальцем */
+
+  /* Плавність анімації */
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #00d9ff;
+    color: #000000;
+    transform: scale(1.1);
+  }
+`;var Un=o((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),Wn=o(((e,t)=>{t.exports=Un()}))(),Gn=e=>{let t=(0,b.c)(19),{tg:n}=e,r=n.initDataUnsafe?.user?.first_name||``,i;t[0]===r?i=t[1]:(i={name:r,email:``,phone:``},t[0]=r,t[1]=i);let[a,o]=(0,_.useState)(i),s;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(s=e=>{let{name:t,value:n}=e.target;o(e=>({...e,[t]:n}))},t[2]=s):s=t[2];let c=s,l;t[3]!==a||t[4]!==n?(l=e=>{e.preventDefault(),n.sendData(JSON.stringify(a)),setTimeout(()=>n.close(),500)},t[3]=a,t[4]=n,t[5]=l):l=t[5];let u=l,d;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,Wn.jsx)(Vn,{children:`Оформити замовлення`}),t[6]=d):d=t[6];let f;t[7]===a.name?f=t[8]:(f=(0,Wn.jsx)(Bn,{type:`text`,placeholder:`Ведіть ваше ім'я`,name:`name`,value:a.name,onChange:c}),t[7]=a.name,t[8]=f);let p;t[9]===a.email?p=t[10]:(p=(0,Wn.jsx)(Bn,{type:`email`,placeholder:`Ведіть ваш email`,name:`email`,value:a.email,onChange:c}),t[9]=a.email,t[10]=p);let m;t[11]===a.phone?m=t[12]:(m=(0,Wn.jsx)(Bn,{type:`tel`,placeholder:`Ведіть ваш номер телефону`,name:`phone`,value:a.phone,onChange:c}),t[11]=a.phone,t[12]=m);let h;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,Wn.jsx)(Hn,{type:`submit`,id:`order`,children:`Submit`}),t[13]=h):h=t[13];let g;return t[14]!==u||t[15]!==f||t[16]!==p||t[17]!==m?(g=(0,Wn.jsxs)(`div`,{children:[d,(0,Wn.jsxs)(zn,{onSubmit:u,children:[f,p,m,h]})]}),t[14]=u,t[15]=f,t[16]=p,t[17]=m,t[18]=g):g=t[18],g};const Kn=Rn.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-`;var Gn=y();function Kn(){let e=(0,Gn.c)(3),t=window.Telegram.WebApp,[n,r]=(0,_.useState)(!0),i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=()=>{r(!1)},e[0]=i):i=e[0];let a=i,o;return e[1]===n?o=e[2]:(o=(0,Hn.jsx)(`div`,{className:`App`,children:n?(0,Hn.jsxs)(Wn,{children:[(0,Hn.jsx)(`h1`,{children:`Онлайн магазин`}),(0,Hn.jsx)(`img`,{src:`https://i.pinimg.com/474x/11/11/49/11114934f6175f6c1600038011acd891.jpg`,alt:`Photo`}),(0,Hn.jsx)(`p`,{className:`paragrah`,children:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus tempore labore a est. Animi temporibus veritatis iste necessitatibus, libero accusantium quibusdam quis nostrum ex deserunt, perferendis quia repudiandae quasi?`}),(0,Hn.jsx)(`button`,{id:`buy-button`,onClick:a,children:`Купити`})]}):(0,Hn.jsx)(Un,{tg:t})}),e[1]=n,e[2]=o),o}var qn=Kn;(0,g.createRoot)(document.getElementById(`root`)).render((0,Hn.jsx)(_.StrictMode,{children:(0,Hn.jsx)(qn,{})}));
+`;var qn=y();function Jn(){let e=(0,qn.c)(3),t=window.Telegram.WebApp,[n,r]=(0,_.useState)(!0),i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=()=>{r(!1)},e[0]=i):i=e[0];let a=i,o;return e[1]===n?o=e[2]:(o=(0,Wn.jsx)(`div`,{className:`App`,children:n?(0,Wn.jsxs)(Kn,{children:[(0,Wn.jsx)(`h1`,{className:`Title`,children:`Онлайн магазин`}),(0,Wn.jsx)(`img`,{src:`https://i.pinimg.com/474x/11/11/49/11114934f6175f6c1600038011acd891.jpg`,alt:`Photo`}),(0,Wn.jsx)(`p`,{className:`paragrah`,children:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus tempore labore a est. Animi temporibus veritatis iste necessitatibus, libero accusantium quibusdam quis nostrum ex deserunt, perferendis quia repudiandae quasi?`}),(0,Wn.jsx)(`button`,{id:`buy-button`,onClick:a,children:`Купити`})]}):(0,Wn.jsx)(Gn,{tg:t})}),e[1]=n,e[2]=o),o}var Yn=Jn;(0,g.createRoot)(document.getElementById(`root`)).render((0,Wn.jsx)(_.StrictMode,{children:(0,Wn.jsx)(Yn,{})}));
